@@ -13,7 +13,8 @@ website:
     left: "ketsiammen_Peter 2024©"
     right: 
       - icon: linkedin
-        href: www.linkedin.com/in/ketsiammen-monthe-yann-peter-b690ab263
+        href: "https://www.linkedin.com/in/ketsiammen-monthe-yann-peter-b690ab263"
+
 
   navbar:
     background: primary
