@@ -168,4 +168,4 @@ format:
     theme: flatly  # Or your chosen theme from Quarto
     dark: darkly
     css: styles.css  # Include your custom CSS file for further styling
-  toc: true
+    toc: true  # Ensure this is nested under the 'html' format options
