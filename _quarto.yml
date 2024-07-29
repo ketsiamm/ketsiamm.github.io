@@ -1,48 +1,35 @@
-project: 
-  type: website
-
 website:
-  title: "Ketsiammen Peter - Data Science Portfolio"
   favicon: Images/favicon.png
   back-to-top-navigation: true
   repo-url: https://github.com/username/username.github.io
-  #repo-actions: [issue] # Uncomment if needed
+  #repo-actions: [issue] # uncomment if needed
 
 page-footer:
   border: true
-  left: "ketsiammen_Peter 2024©"
-  right:
-    - icon: fab fa-linkedin  # Font Awesome icon for LinkedIn
-      href: "https://www.linkedin.com/in/ketsiammen-monthe-yann-peter-b690ab263"
 
 navbar:
-  background: primary  # Assuming 'primary' is defined in your theme
-  search: true
-  right:
-    - text: "Home"
-      file: index.qmd
-    - text: "My Resume"
-      file: resume.qmd
-    - text: "Data Cleansing"
-      file: cleansing.qmd
-      icon: fas fa-tint  # Font Awesome icon for data cleansing
-    - text: "Data Exploration"
-      file: exploration.qmd
-      icon: fas fa-chart-line  # Font Awesome icon for data exploration
-    - text: "Story Telling"
-      file: story_telling.qmd
-      icon: fas fa-book-open  # Font Awesome icon for storytelling
-    - text: "Machine Learning"
-      file: ml.qmd
-      icon: fas fa-code  # Font Awesome icon for machine learning
-    - text: "Full Stack"
-      file: full_stack.qmd
-      icon: fas fa-layer-group  # Font Awesome icon for full stack
-    - text: "Competition"
-      file: competition.qmd
-      icon: fas fa-trophy  # Font Awesome icon for competition
+  - text: "Home"
+    file: index.qmd
+    icon: fas fa-home
+  - text: "Projects"
+    menu:
+      - text: "Data Cleansing"
+        file: cleansing.qmd
+        icon: fas fa-broom
+      - text: "Data Exploration"
+        file: exploration.qmd
+        icon: fas fa-search
+      - text: "Machine Learning"
+        file: ml.qmd
+        icon: fas fa-robot
+      - text: "Full Stack"
+        file: full_stack.qmd
+        icon: fas fa-laptop-code
+      - text: "Competition"
+        file: competition.qmd
+        icon: fas fa-trophy
 
-sidebar: 
+sidebar:
   - title: "Data Cleansing"
     style: "docked"
     background: light
@@ -181,4 +168,4 @@ format:
     theme: flatly  # Or your chosen theme from Quarto
     dark: darkly
     css: styles.css  # Include your custom CSS file for further styling
-   toc: true
+  toc: true
