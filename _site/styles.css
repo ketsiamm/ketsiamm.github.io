@@ -1,1 +1,211 @@
-/* css styles */
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  background-color: #f4f6f9; /* Light background for better readability */
+  color: #333; /* Dark text color for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #1a73e8; /* Updated primary blue for a modern look */
+  border-bottom: 3px solid #0a58ca; /* Darker blue border for separation */
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+}
+
+.navbar a {
+  color: white !important; /* White text for visibility */
+  text-transform: uppercase; /* Makes text more readable */
+  letter-spacing: 1px; /* Adds spacing between letters */
+  padding: 10px 15px;
+  font-weight: 500; /* Adds some weight for readability */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar a:hover {
+  color: #ffd700 !important; /* Gold color on hover */
+  background-color: #0a58ca; /* Darker background on hover for emphasis */
+  border-radius: 4px; /* Rounded corners on hover */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #212529; /* Darker sidebar for contrast */
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.sidebar a {
+  color: #ffc107 !important; /* Gold text for sidebar links */
+  display: block;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.sidebar a:hover {
+  color: #ffffff !important; /* White on hover */
+  background-color: #1a73e8; /* Primary blue on hover */
+  border-radius: 4px;
+}
+
+/* Sidebar Dropdown */
+.sidebar .menu {
+  padding-left: 20px;
+}
+
+.sidebar .menu a {
+  font-size: 0.95rem;
+}
+
+.sidebar .menu a:hover {
+  color: #ffd700 !important; /* Gold for submenus */
+}
+
+/* Footer Styles */
+.page-footer {
+  background-color: #343a40; /* Dark footer */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-footer a {
+  color: #ffc107 !important;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.page-footer a:hover {
+  color: #1a73e8 !important; /* Primary blue for footer links */
+}
+
+/* Table of Contents Styles */
+.toc {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.toc a {
+  color: #1a73e8 !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.toc a:hover {
+  color: #0a58ca !important;
+}
+
+/* Header Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #1a73e8; /* Updated primary color */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+/* Link Styles */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #1a73e8;
+  border-color: #0a58ca;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0a58ca;
+  border-color: #0056b3;
+  color: white;
+  transform: scale(1.05); /* Slight zoom effect for interaction */
+}
+
+/* Modal Styles (Optional for popups) */
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  background-color: #1a73e8;
+  color: white;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover Effect for Images */
+img:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}

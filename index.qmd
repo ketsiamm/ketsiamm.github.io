@@ -1,10 +1,63 @@
 ---
-title: "about me"
-subtitle: "my data science portfolio"
-# use quarto markdown to 
+title: "About Me"
+subtitle: "My Data Science Portfolio"
+format:
+  html:
+    css: styles.css  # Path to your CSS file
 ---
 
-# Title 1 Header
-## Title 2 Header
+# Welcome to My Portfolio!
 
-[MarkDown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
+Hello! I'm Ketsiammen, a data science enthusiast. This website is a showcase of my work, including various data science projects. Feel free to explore the sections below:
+
+## Projects Overview
+
+### Data Cleansing
+- [Data Cleansing Overview](cleansing.qmd)
+- [Project 1: Data Cleaning Project](Cleansing_Projects/project1.qmd)
+- [Project 2: Data Cleaning Project](Cleansing_Projects/project2.qmd)
+- [Project 3: Data Cleaning Project](Cleansing_Projects/project3.qmd)
+- [Project 4: Data Cleaning Project](Cleansing_Projects/project4.qmd)
+- [Project 5: Data Cleaning Project](Cleansing_Projects/project5.qmd)
+
+### Data Exploration
+- [Data Exploration Overview](exploration.qmd)
+- [Project 1: Data Exploration Project](Exploration_Projects/project1.qmd)
+- [Project 2: Data Exploration Project](Exploration_Projects/project2.qmd)
+- [Project 3: Data Exploration Project](Exploration_Projects/project3.qmd)
+- [Project 4: Data Exploration Project](Exploration_Projects/project4.qmd)
+- [Project 5: Data Exploration Project](Exploration_Projects/project5.qmd)
+
+### Story Telling
+- [Story Telling Overview](story_telling.qmd)
+- [Project 1: Story Telling Project](Story_Telling/project1.qmd)
+- [Project 2: Story Telling Project](Story_Telling/project2.qmd)
+- [Project 3: Story Telling Project](Story_Telling/project3.qmd)
+- [Project 4: Story Telling Project](Story_Telling/project4.qmd)
+- [Project 5: Story Telling Project](Story_Telling/project5.qmd)
+
+### Machine Learning
+- [Machine Learning Overview](ml.qmd)
+- [Project 1: Machine Learning Project](Machine_Learning/project1.qmd)
+- [Project 2: Machine Learning Project](Machine_Learning/project2.qmd)
+- [Project 3: Machine Learning Project](Machine_Learning/project3.qmd)
+- [Project 4: Machine Learning Project](Machine_Learning/project4.qmd)
+- [Project 5: Machine Learning Project](Machine_Learning/project5.qmd)
+
+### Full Stack
+- [Full Stack Overview](full_stack.qmd)
+- [Project 1: Full Stack Project](Full_Stack/project1.qmd)
+- [Project 2: Full Stack Project](Full_Stack/project2.qmd)
+- [Project 3: Full Stack Project](Full_Stack/project3.qmd)
+- [Project 4: Full Stack Project](Full_Stack/project4.qmd)
+- [Project 5: Full Stack Project](Full_Stack/project5.qmd)
+
+### Competition
+- [Competition Overview](competition.qmd)
+- [Project 1: Competition Project](Competition/project1.qmd)
+- [Project 2: Competition Project](Competition/project2.qmd)
+- [Project 3: Competition Project](Competition/project3.qmd)
+- [Project 4: Competition Project](Competition/project4.qmd)
+- [Project 5: Competition Project](Competition/project5.qmd)
+
+[Learn More About Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html#links-images)
