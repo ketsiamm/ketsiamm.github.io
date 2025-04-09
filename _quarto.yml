@@ -4,8 +4,9 @@ project:
 website:
   favicon: Images/favicon.png
   back-to-top-navigation: true
-  repo-url: https://github.com/username/username.github.io
-  #repo-actions: [issue] # uncomment if needed
+  repo-url: https://github.com/ketsiamm/ketsiamm.github.io
+
+  repo-actions: [issue] # uncomment if needed
 
 page-footer:
   border: true
