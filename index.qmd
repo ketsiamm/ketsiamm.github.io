@@ -22,11 +22,11 @@ Hello! I'm Ketsiammen, a data science enthusiast. This website is a showcase of 
 
 ### Data Exploration
 - [Data Exploration Overview](exploration.qmd)
-- [Project 1: Data Exploration Project](Exploration_Projects/project1.qmd)
-- [Project 2: Data Exploration Project](Exploration_Projects/project2.qmd)
-- [Project 3: Data Exploration Project](Exploration_Projects/project3.qmd)
-- [Project 4: Data Exploration Project](Exploration_Projects/project4.qmd)
-- [Project 5: Data Exploration Project](Exploration_Projects/project5.qmd)
+- [Project 1: Data Exploration Project](Cleansing_Exploration/project1.qmd)
+- [Project 2: Data Exploration Project](Cleansing_Exploration/project2.qmd)
+- [Project 3: Data Exploration Project](Cleansing_Exploration/project3.qmd)
+- [Project 4: Data Exploration Project](Cleansing_Exploration/project4.qmd)
+- [Project 5: Data Exploration Project](Cleansing_Exploration/project5.qmd)
 
 ### Story Telling
 - [Story Telling Overview](story_telling.qmd)
