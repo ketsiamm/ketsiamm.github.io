@@ -32,6 +32,10 @@ navbar:
       - text: "Competition"
         file: competition.qmd
         icon: fas fa-trophy
+      - text: "Story Telling"
+        file: story_telling.qmd
+        icon: fas fa-book-open
+    
 
 sidebar:
   - title: "Data Cleansing"

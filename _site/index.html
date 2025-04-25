@@ -428,3 +428,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 </body></html>
+
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('hidden');
+  }
+</script>

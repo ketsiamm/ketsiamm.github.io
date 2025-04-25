@@ -1,112 +1,138 @@
-/* General Body Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.7;
-  background-color: #f4f6f9; /* Light background for better readability */
-  color: #333; /* Dark text color for contrast */
-  margin: 0;
-  padding: 0;
-}
-
-/* Global Box Sizing */
+/*==========================
+  General Styles
+==========================*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Navbar Styles */
-.navbar {
-  background-color: #1a73e8; /* Updated primary blue for a modern look */
-  border-bottom: 3px solid #0a58ca; /* Darker blue border for separation */
-  padding: 15px 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-.navbar a {
-  color: white !important; /* White text for visibility */
-  text-transform: uppercase; /* Makes text more readable */
-  letter-spacing: 1px; /* Adds spacing between letters */
+html {
+  scroll-behavior: smooth;
+}
+
+/*==========================
+  Typography
+==========================*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #1a73e8;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.1rem; }
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+/*==========================
+  Sidebar
+==========================*/
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
   padding: 10px 15px;
-  font-weight: 500; /* Adds some weight for readability */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  z-index: 1001;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.navbar a:hover {
-  color: #ffd700 !important; /* Gold color on hover */
-  background-color: #0a58ca; /* Darker background on hover for emphasis */
-  border-radius: 4px; /* Rounded corners on hover */
+.sidebar-toggle:hover {
+  background-color: #0a58ca;
+  transform: scale(1.05);
 }
 
-/* Sidebar Styles */
 .sidebar {
-  background-color: #212529; /* Darker sidebar for contrast */
+  background-color: #212529;
   color: #fff;
-  width: 250px;
+  width: 260px;
   padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+  height: 100vh;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
 }
 
 .sidebar a {
-  color: #ffc107 !important; /* Gold text for sidebar links */
+  color: #ffc107 !important;
   display: block;
   padding: 12px 20px;
   font-size: 1.1rem;
   font-weight: 500;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .sidebar a:hover {
-  color: #ffffff !important; /* White on hover */
-  background-color: #1a73e8; /* Primary blue on hover */
-  border-radius: 4px;
+  color: #fff !important;
+  background-color: #1a73e8;
 }
 
-/* Sidebar Dropdown */
 .sidebar .menu {
-  padding-left: 20px;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .sidebar .menu a {
   font-size: 0.95rem;
+  padding: 10px 18px;
 }
 
 .sidebar .menu a:hover {
-  color: #ffd700 !important; /* Gold for submenus */
+  color: #ffd700 !important;
 }
 
-/* Footer Styles */
-.page-footer {
-  background-color: #343a40; /* Dark footer */
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.page-footer a {
-  color: #ffc107 !important;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.page-footer a:hover {
-  color: #1a73e8 !important; /* Primary blue for footer links */
-}
-
-/* Table of Contents Styles */
+/*==========================
+  TOC (Table of Contents)
+==========================*/
 .toc {
   background-color: #ffffff;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
   margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .toc a {
@@ -118,94 +144,82 @@ body {
 
 .toc a:hover {
   color: #0a58ca !important;
-}
-
-/* Header Styles */
-h1, h2, h3, h4, h5, h6 {
-  color: #1a73e8; /* Updated primary color */
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1.1rem;
-}
-
-/* Link Styles */
-a {
-  color: #1a73e8;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #0a58ca;
   text-decoration: underline;
 }
 
-/* Button Styles */
+/*==========================
+  Footer
+==========================*/
+.page-footer {
+  background-color: #343a40;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-footer a {
+  color: #ffc107 !important;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.page-footer a:hover {
+  color: #1a73e8 !important;
+}
+
+/*==========================
+  Buttons
+==========================*/
 .btn-primary {
   background-color: #1a73e8;
-  border-color: #0a58ca;
+  border: none;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: 600;
   transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
   background-color: #0a58ca;
-  border-color: #0056b3;
-  color: white;
-  transform: scale(1.05); /* Slight zoom effect for interaction */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Modal Styles (Optional for popups) */
+/*==========================
+  Modal
+==========================*/
 .modal-content {
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .modal-header {
   background-color: #1a73e8;
   color: white;
-  padding: 15px;
-  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-radius: 10px 10px 0 0;
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
+/*==========================
+  Image Effects
+==========================*/
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect for Images */
 img:hover {
   transform: scale(1.05);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
