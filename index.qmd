@@ -4,6 +4,7 @@ subtitle: "My Data Science Portfolio"
 format:
   html:
     css: styles.css  # Path to your CSS file
+    output-file: index.html
 ---
 
 # Welcome to My Portfolio!
